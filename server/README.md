@@ -1,5 +1,13 @@
 # Class managements APIs with NestJS
 
+## 🚀 Tech Stack
+
+-   **Framework**: NestJS
+-   **API**: GraphQL
+-   **State Management**: Apollo server (GraphQL)
+
+---
+
 ## Features
 
 The migration includes:
@@ -22,23 +30,37 @@ cd cm-nestjs-be
 ### 3. Install dependencies
 
 ```bash
-npm i
+cp .env.example .env
+npm install
 ```
 
 ### 4. Compile and run the project
 
 ```bash
-# development
 npm run start
-
-# watch mode
 npm run start:dev
-
-# production mode
 npm run start:prod
 ```
 
-The server will start at `http://127.0.0.1:3000/`.
+## Incase
+
+-   You dont want to run client
+
+```bash
+docker run -d --name cm_client -p 3000:3000 giahuyday/cm_nextjs:v4
+```
+
+-   You dont have local postgres db
+
+```bash
+docker run -d --name postgres_db -p 5432:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=root -e POSTGRES_DB=cm_nest postgres:15
+```
+## Access services:
+
+-   Backend (GraphQL Playground): http://localhost:3001/graphql
+-   Frontend: http://localhost:3000/
+-   Postgres: http://localhost:54321/
+
 
 ### 5. API Role Permissions
 
