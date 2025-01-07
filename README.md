@@ -30,8 +30,8 @@ npm start
 
 📂 GitHub Repositories
 
--   Backend: [cm-nestjs-be](github.com/giahuyday/cm-nestjs-be)
--   Frontend: [cm-next-fe](github.com/giahuyday/cm-next-fe)
+-   Backend: [cm-nestjs-be](https://github.com/giahuyday/cm-nestjs-be)
+-   Frontend: [cm-next-fe](https://github.com/giahuyday/cm-next-fe)
 -   Both projects use GraphQL instead of REST API.
 
 ## 🐳 Build & Run with Docker
