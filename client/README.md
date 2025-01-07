@@ -1,40 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FrontEnd for Class Management System
 
-## Getting Started
+## 🚀 Tech Stack
 
-First, run the development server:
+-   **Framework**: NextJS, Tailwind CSS
+-   **Styling**: Tailwind CSS
+-   **API**: GraphQL
+-   **State Management**: Apollo Client (GraphQL)
+
+---
+
+## 🛠 How to Run Code
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cp .env.example .env.local
+npm install
+npm run build
+npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Incase
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+-   You dont want to run server
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+docker run -d --name cm_server -p 3001:3000 -e DB_HOST=host.docker.internal  -e DB_PORT=5432  -e DB_USERNAME=postgres  -e DB_PASSWORD=root  -e DB_DATABASE=cm_nest giahuyday/cm_nestjs:latest
+```
 
-## Learn More
+-   You dont have local postgres db
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+docker run -d --name postgres_db -p 5432:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=root -e POSTGRES_DB=cm_nest postgres:15
+```
 
--   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
--   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Access services:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-Practice NextJS (03):
-Thiết lập User Interface để tương tác với API đã tạo ở Practice 1 hoặc 2 của Backend
-
+-   Backend (GraphQL Playground): http://localhost:3001/graphql
+-   Frontend: http://localhost:3000/
+-   Postgres: http://localhost:54321/
