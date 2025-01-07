@@ -1,0 +1,124 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Nguyen Van 11Ed11111",
+      "classId": "2"
+    },
+    {
+      "id": 2,
+      "name": "Nguyen Van 11Ed111121",
+      "classId": "2"
+    },
+    {
+      "id": 3,
+      "name": "nguyen hoang ghai huy",
+      "classId": 1
+    },
+    {
+      "id": 4,
+      "name": "huy nguyen hoang gia",
+      "classId": 1
+    },
+    {
+      "id": 5,
+      "name": "huy nguyen hoang ",
+      "classId": 1
+    },
+    {
+      "id": 6,
+      "name": "van a",
+      "classId": 1
+    },
+    {
+      "id": 7,
+      "name": "van b",
+      "classId": 1
+    },
+    {
+      "id": 8,
+      "name": "d",
+      "classId": 1
+    },
+    {
+      "id": 9,
+      "name": "e",
+      "classId": 1
+    },
+    {
+      "id": 10,
+      "name": "f",
+      "classId": 1
+    },
+    {
+      "id": 11,
+      "name": "g",
+      "classId": 1
+    },
+    {
+      "id": 12,
+      "name": "h",
+      "classId": 1
+    },
+    {
+      "id": 13,
+      "name": "i",
+      "classId": 1
+    },
+    {
+      "id": 14,
+      "name": "j",
+      "classId": 1
+    }
+  ],
+  "classes": [
+    {
+      "id": 1,
+      "name": "Computer mathematical 1312"
+    },
+    {
+      "id": 2,
+      "name": "Computer mathematical 13122"
+    },
+    {
+      "id": 3,
+      "name": "OOP-1"
+    },
+    {
+      "id": 4,
+      "name": "OOP-2"
+    },
+    {
+      "id": 5,
+      "name": "DSA-1"
+    },
+    {
+      "id": 6,
+      "name": "DSA-2"
+    },
+    {
+      "id": 7,
+      "name": "Math-1"
+    },
+    {
+      "id": 8,
+      "name": "Math-2"
+    },
+    {
+      "id": 9,
+      "name": "Physical-1"
+    },
+    {
+      "id": 10,
+      "name": "Physical-2"
+    },
+    {
+      "id": 11,
+      "name": "PE-1"
+    },
+    {
+      "id": 12,
+      "name": "PE-2"
+    }
+  ]
+}

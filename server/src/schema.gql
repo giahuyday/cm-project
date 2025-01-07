@@ -1,0 +1,64 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type StudentEntity {
+  id: ID!
+  name: String!
+  classId: CourseEntity!
+}
+
+type CourseEntity {
+  id: ID!
+  name: String!
+}
+
+type Query {
+  getHello: String!
+  getCourseById(id: Int!): CourseEntity!
+  getCourses: [CourseEntity!]!
+  getCourseByName(courseDto: CreateCourseDto!): [CourseEntity!]!
+  getStudents: [StudentEntity!]!
+  getStudentById(studenDto: StudentByClassDto!): StudentEntity!
+  getStudentByName(studentDto: StudentByClassDto!): [StudentEntity!]!
+  getStudentByClassName(studentDto: StudentByClassDto!): [StudentEntity!]!
+}
+
+input CreateCourseDto {
+  name: String!
+}
+
+input StudentByClassDto {
+  id: Float
+  courseName: String
+  name: String
+  classId: Float
+}
+
+type Mutation {
+  createCourse(courseDto: CreateCourseDto!): CourseEntity!
+  deleteCourseById(courseDto: DeleteCourseDto!): Boolean!
+  updateCourseById(id: Float!, courseDto: CreateCourseDto!): CourseEntity!
+  createStudent(studentDto: CreateStudentDto!): StudentEntity!
+  updateStudent(studentDto: UpdateStudentDto!): StudentEntity!
+  deleteStudent(studentDto: DeleteStudentDto!): Boolean!
+}
+
+input DeleteCourseDto {
+  id: Float!
+}
+
+input CreateStudentDto {
+  name: String!
+  classId: Float!
+}
+
+input UpdateStudentDto {
+  id: Float
+  name: String
+  classId: Float
+}
+
+input DeleteStudentDto {
+  id: Float!
+}
