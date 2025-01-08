@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   backend:
-    image: giahuyday/cm_nestjs:latest
+    image: giahuyday/cm_nestjs
     container_name: backend
     restart: always
     depends_on:
@@ -18,7 +18,7 @@ services:
       - "3001:3001"
 
   frontend:
-    image: giahuyday/cm_nextjs:v4
+    image: giahuyday/cm_nextjs
     container_name: frontend
     restart: always
     depends_on:
