@@ -69,19 +69,3 @@ docker run -d --name postgres_db -p 5432:5432 -e POSTGRES_USER=postgres -e POSTG
 | Admin     | Full access to all APIs.                       |
 | Principal | CRUD operations on Classes, view student list. |
 | Teacher   | CRUD operations on Students, view class list.  |
-
-| API Chính            | Task                                                      | API                             | Body                                  | Params           |
-| -------------------- | --------------------------------------------------------- | ------------------------------- | ------------------------------------- | ---------------- |
-| **Quản lí học sinh** | Thêm Học Sinh                                             | `/student/api/create`           | `{ "name": value, "classId": value }` | None             |
-|                      | Update thông tin học sinh                                 | `/student/api/update/:id`       | `{ "name": value, "classId": value }` | `id` (studentId) |
-|                      | Xóa học sinh                                              | `/student/api/delete/`          | `{"id": value}`                       |                  |
-|                      | Truy xuất tất cả danh sách học sinh                       | `/student/api/get_students`     | None                                  | None             |
-|                      | Truy xuất thông tin HS theo ID                            | `/student/api/get_student/:id`  | None                                  | `id` (studentId) |
-|                      | Truy xuất thông tin HS theo Name (search LIKE)            | `/student/api/get_by_name`      | `{ "name": value }`                   | None             |
-|                      | Truy xuất tất cả học sinh theo Class (sử dụng Class Name) | `/student/api/get_by_classname` | `{ "name": value }`                   | None             |
-| **Quản lí Lớp**      | Thêm 1 Lớp                                                | `/class/api/create`             | `{ "name": value}`                    | None             |
-|                      | Update thông tin Lớp                                      | `/class/api/update/:id`         | `{ "name": value }`                   | `id` (classId)   |
-|                      | Xóa Lớp (nếu lớp còn HS thì không được phép xóa)          | `/class/api/delete/`            | `{"id": value}`                       |                  |
-|                      | Truy xuất thông tin Lớp theo ID                           | `/class/api/get_course/:id`     | None                                  | `id` (classId)   |
-
----

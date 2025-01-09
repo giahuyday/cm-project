@@ -16,7 +16,7 @@ export class CourseResolver {
 
     @Roles('admin', 'principal')
     @Query(() => CourseEntity)
-    async getCourseById(@Args('id', { type: () => Int }) id: number) {
+    async getCourseById(@Args('id') id: number) {
         return await this.classServices.getCourseById(id);
     }
 

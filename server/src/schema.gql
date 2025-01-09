@@ -15,7 +15,7 @@ type CourseEntity {
 
 type Query {
   getHello: String!
-  getCourseById(id: Int!): CourseEntity!
+  getCourseById(id: Float!): CourseEntity!
   getCourses: [CourseEntity!]!
   getCourseByName(courseDto: CreateCourseDto!): [CourseEntity!]!
   getStudents: [StudentEntity!]!
