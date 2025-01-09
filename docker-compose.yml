@@ -14,6 +14,9 @@ services:
       DB_PASSWORD: root
       DB_DATABASE: cm_nest
       PORT: 3001
+      ALLOW_ORIGIN: http://localhost:3000,
+      ALLOW_HEADER: Content-Type,Accept,Authorization,
+      ALLOW_METHOD: GET,HEAD,PUT,PATCH,POST,DELETE,
     ports:
       - "3001:3001"
 
